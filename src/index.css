@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/fonts/Quicksand/Quicksand_Bold.otf) format("truetype");
+}
+@font-face {
+  font-family: QuicksandLight;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/fonts/Quicksand/Quicksand_Light.otf)
+    format("truetype");
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
+@font-face {
+  font-family: InterSemiBold;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/fonts/inter/Inter-SemiBold.otf) format("truetype");
+}
+@font-face {
+  font-family: InterBold;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/src/fonts/inter/Inter-Bold.otf) format("truetype");
+}
+body{
+  background-color: #FAFAFA;
+}
+body.dark {
+  background-color: #242424
+}
+.scroll-hidden{
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: none;
+}
+.p-stepper-number{
+  display: none;
+}

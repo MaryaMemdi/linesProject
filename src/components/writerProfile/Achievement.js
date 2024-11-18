@@ -1,0 +1,19 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import TitleParts from "./titleParts";
+import readingMedal from "/assets/images/writerProfile/medal 3.png";
+import followerMedal from "../../../public/assets/images/writerProfile/FollowersMedal.png";
+const Achievement = () => {
+    const achivementData = [
+        { id: 0, number: 1 },
+        { id: 1, number: 2 },
+        { id: 2, number: 3 },
+        { id: 3, number: 4 },
+        { id: 4, number: 5 },
+    ];
+    return (_jsxs("div", { className: "w-[21.25rem] md:w-[44rem] lg:w-[58rem] md:h-[880px] relative bg-white rounded-xl p-4", children: [_jsxs("div", { className: "gap-3", children: [_jsx(TitleParts, { title: "Achievement" }), _jsx("div", { className: " text-stone-800 text-base font-semibold font-QuicksandLight leading-normal", children: _jsxs("p", { children: ["Celebrate your milestones on", _jsx("span", { className: "text-stone-800 text-base font-semibold font-Quicksand leading-normal", children: "Lines" }), "! This section showcases the badges, awards, and accomplishments you've earned throughout your journey. From publishing your first story to reaching follower milestones or being recognized for top-rated content, each achievement reflects your growth as a writer or reader within our vibrant community. Keep writing, exploring, and earning new accolades!"] }) })] }), _jsxs("div", { className: " mt-14", children: [_jsx(TitleParts, { title: "Readings" }), _jsx("div", { className: "gap-8 mt-6", children: _jsx("div", { className: "w-full h-[206px] flex-col justify-start items-start gap-6 inline-flex ", children: _jsx("div", { className: "self-stretch justify-start items-center gap-8 inline-flex overflow-x-scroll md:overflow-x-hidden", children: achivementData.map((item, index) => {
+                                    return (_jsxs("div", { className: "w-[107px] flex-col justify-start items-center gap-3 inline-flex ", children: [_jsx("div", { className: "self-stretch justify-start items-center gap-px inline-flex", children: _jsxs("div", { className: "w-[107px] h-[107px] relative", children: [_jsx("img", { className: "w-[107px] h-[105px] left-0 top-[1px] absolute", src: readingMedal }), _jsx("div", { className: `w-[107px] h-[107px] left-0 top-0 absolute bg-black/50 rounded-full ${index ? '' : 'hidden'}` })] }) }), _jsxs("div", { className: `${index ? "text-stone-400" : "text-stone-800"} text-lg font-semibold font-['Quicksand'] leading-[27px]`, children: [item.number, "K Reads"] })] }, item.id));
+                                }) }) }) })] }), _jsxs("div", { className: " mt-10", children: [_jsx(TitleParts, { title: "Followers" }), _jsx("div", { className: "gap-8 mt-6", children: _jsx("div", { className: "w-full h-[206px] flex-col justify-start items-start gap-6 inline-flex", children: _jsx("div", { className: "self-stretch justify-start items-center gap-8 inline-flex overflow-x-scroll md:overflow-x-hidden", children: achivementData.map((item, index) => {
+                                    return (_jsxs("div", { className: "w-[107px] flex-col justify-start items-center gap-3 inline-flex ", children: [_jsx("div", { className: "self-stretch justify-start items-center gap-px inline-flex", children: _jsxs("div", { className: "w-[107px] h-[107px] relative", children: [_jsx("img", { className: "w-[107px] h-[105px] left-0 top-[1px] absolute", src: followerMedal }), _jsx("div", { className: `w-[107px] h-[107px] left-0 top-0 absolute bg-black/50 rounded-full ${index ? '' : 'hidden'}` })] }) }), _jsxs("div", { className: `${index ? "text-stone-400" : "text-stone-800"} text-lg font-semibold font-['Quicksand'] leading-[27px] whitespace-nowrap`, children: [item.number, "K Followers"] })] }, item.id));
+                                }) }) }) })] })] }));
+};
+export default Achievement;
